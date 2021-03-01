@@ -1,0 +1,109 @@
+body, h1,h2,h3,h4,h5,h6, p {font-family: "Raleway", serif}
+.w3-row-padding img {margin-bottom: 12px}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('img/diana1.jpg');
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  float: right;
+  position: relative;
+
+}
+
+
+
+.w3-tangerine {
+  font-family: 'Tangerine', serif;
+}
+
+p.job, p.curso {
+	font-weight: bold;
+}
+
+
+
+
+
+ul.w3.ul  {
+	list-style: none;
+}
+
+
+
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100%;
+  align-items: center;
+  position: relative;
+  padding: 0 2px 0 2px;
+  display: flex;
+  	
+  width: 410px;
+}
+
+.progress-value {
+  animation: load 3s ease-in-out forwards ;
+  box-shadow: 0 10px 40px -10px #fff;
+  position: absolute;
+  border-radius: 12px;
+  background: #ffcc00;
+  height: 15px;
+  width: 0px;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 99%; }
+}
+
+
+.progress-value1 {
+  animation: load1 3s ease-in-out forwards ;
+  box-shadow: 0 10px 40px -10px #fff;
+  position: absolute;
+  border-radius: 12px;
+  background: #ffcc00;
+  height: 15px;
+  width: 0px;
+}
+
+@keyframes load1 {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+
+.progress-value2 {
+  animation: load2 3s ease-in-out forwards ;
+  box-shadow: 0 10px 40px -10px #fff;
+  position: absolute;
+  border-radius: 12px;
+  background: #ffcc00;
+  height: 15px;
+  width: 0px;
+}
+
+@keyframes load2 {
+  0% { width: 0; }
+  100% { width: 50%; }
+}
+
+.progress-value3 {
+  animation: load3 3s ease-in-out forwards ;
+  box-shadow: 0 10px 40px -10px #fff;
+  position: absolute;
+  border-radius: 12px;
+  background: #ffcc00;
+  height: 15px;
+  width: 0px;
+}
+
+@keyframes load3 {
+  0% { width: 0; }
+  100% { width: 25%; }
+}

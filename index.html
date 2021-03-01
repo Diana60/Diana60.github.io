@@ -1,13 +1,412 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dianafo.github.io</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-</body>
+<!DOCTYPE HTML>
+<html lang="pt-pt">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<title>Curriculo</title>
+
+		<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<!-- jquery - link cdn -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	</head>
+
+	<body>
+
+	
+		
+		
+		<!-- Sidebar with image -->
+		<div class="w3-sidebar w3-third w3-col s12 m12 l5 w3-left  w3-collapse ">
+		  	<div class="bgimg" width="600" height="400"></div>
+		</div>
+
+		<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+		<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+		  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+		    <i class="fa fa-times"></i>
+		  </a>
+		  <div class="w3-bar-block w3-center">
+		    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+		    <a href="#work" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">CV</a>
+		    <a href="#social" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Social Media</a>
+		    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+		    <a href="blog.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Blog</a>
+		  </div>
+		</nav>
+
+		<!-- Page Content -->
+		<div class="w3-main w3-rest w3-padding-large" style="margin-left:40%">
+
+		  	<!-- Menu icon to open sidebar -->
+		  	<span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+		  	<!-- Header -->
+		  	<header class="w3-container w3-center" style="padding:50px 16px" id="home">
+			    <h1 class="w3-jumbo w3-tangerine w3-xxxlarge w3-padding">Diana Oliveira</h1>
+			    <h5>Engenheira Informática</h5>
+			    <img src="img/diana1.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+			    <img src="img/diana4.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+			    <a href="cvDianaOliveira.pdf" download>
+				    <button class="w3-button w3-light-grey w3-text-gray w3-padding-large w3-margin-top">
+				      <i class="fa fa-download"></i> Download CV
+				    </button>
+			</a>
+			 </header>
+		
+
+			<!-- Contact Section -->
+			<div class="w3-padding-32 w3-content w3-center w3-text-grey" id="contact" style="margin-bottom:64px">
+				<div class="w3-section ">
+					<p><i class="fa fa-phone fa-fw w3-margin-right"></i> 912728945</p>
+					<p><i class="fa fa-envelope fa-fw w3-margin-right"></i> dianafo60r@gmail.com</p>
+					<p><i class="fa fa-map-marker fa-fw w3-margin-right"></i> Lugar de Pogido, EN101 Gondoriz Arcos de Valdevez</p>
+				</div>
+				
+			</div>
+					
+
+		
+			<!-- Experiência profissional -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-32 
+			" id="work">
+				<div class="w3-row-padding">
+					<div class="w3-third ">
+						
+						<h3 class="w3-text-gray w3-center"><i class="fas fa-briefcase w3-text-amber w3-large w3-margin-right"></i>Experiência Profissional</h3>
+					</div>
+				
+					<div class="w3-rest w3-border-left w3-padding-large">
+						<ul class="w3-ul">
+							<li>
+								<p class="job">Engenheira de documentação de processo</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>03/2018 - Presente</i></p>
+								<p>ZF Group</p>
+								<p>Ponte de Lima, Portugal</p>
+							</li>
+						</ul>
+						<ul class="w3-ul">
+							<li>
+								<p class="job">Estagiária</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>11/2017- 02/2018</i></p>
+								<p>ZF Group</p>
+								<p>Ponte de Lima, Portugal</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+			</div>
+
+
+			<!-- Formação académica -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="formacao">
+				<div class="w3-row-padding">
+					<div class="w3-third ">
+						 
+						<h3 class="w3-text-gray w3-center "><i class="fas fa-graduation-cap  w3-text-amber w3-large w3-margin-right"></i>Formação Académica</h3>
+					</div>
+				
+					<div class="w3-rest w3-border-left w3-padding-large">
+						<ul class="w3-ul">
+							<li>
+								
+								<p class="curso">Licenciatura em Engenharia Informática</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>09/2012 - 10/2019</i></p>
+								<p>Universidade do Minho</p>
+								<p>Braga, Portugal</p>
+							</li>
+						</ul>
+						<ul class="w3-ul">
+							<li>
+								
+								<p class="curso">Curso de Inglês</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>2013 - 2016</i></p>
+								<p>Wall Street English</p>
+								<p>Braga, Portugal</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				
+									
+			</div>
+
+
+			<!-- Competências -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="skills">
+				<div  class="w3-row-padding">
+					<div class="w3-third ">
+						<h3 class="w3-text-gray w3-center"><i class="fas fa-wrench w3-text-amber w3-large w3-margin-right"></i>Competências</h3>
+					</div>
+
+					<div class="w3-rest w3-border-left w3-padding-large">
+						<p > <b>Linguagens de programação:</b></p>
+						<ul class="w3-ul">
+							<li>
+								<p class="w3-margin-left" >HTML5</p>	
+								<p class="w3-margin-left">CSS3</p>
+								<p class="w3-margin-left">JavaScript</p>
+								<p class="w3-margin-left">PHP</p>
+								<p class="w3-margin-left">SQL</p>
+								<p class="w3-margin-left">Java</p>
+								<p class="w3-margin-left">C</p>
+								<p class="w3-margin-left">VB.NET</p>
+								<p class="w3-margin-left">Ladder</p>
+							</li>
+						</ul>
+						
+						<p> <b>Sistemas de Gestão de Base de Dados:</b></p>
+						<ul  class="w3-ul">
+							<li>
+								<p class="w3-margin-left">MySQL</p>							
+								<p class="w3-margin-left">Microsoft SQL Server</p>
+							</li>
+						</ul>
+						
+
+						<p> <b>Ambientes de trabalho:</b></p>
+						<ul  class="w3-ul">
+							<li>
+								<p class="w3-margin-left">BlueJ</p>
+								<p class="w3-margin-left">NetBeans IDE</p>
+								<p class="w3-margin-left">Microsoft Visual Studio</p>
+								<p class="w3-margin-left">MySQL Workbench</p>
+								<p class="w3-margin-left">TIA Portal</p>
+							</li>
+						</ul>
+						
+
+						<p> <b>Outros:</b></p>
+						<ul  class="w3-ul">
+							<li>
+								<p class="w3-margin-left">Bootstrap</p>
+								<p class="w3-margin-left">W3.CSS</p>
+								<p class="w3-margin-left">PHPMyAdmin</p>
+								<p class="w3-margin-left">JQuery</p>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				
+				
+
+			</div>
+
+		
+			<!-- Certificados -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="certificates">
+				<div class="w3-row-padding">
+					<div class="w3-third ">
+						<h3 class="w3-text-gray w3-center"><i class="fas fa-certificate w3-text-amber w3-large w3-margin-right"></i>Licenças e Certificados</h3>
+					</div>
+
+					<div class="w3-rest w3-border-left w3-padding-large">
+						<ul class="w3-ul">	
+							<li>
+								<p class="curso">Curso Completo de Desenvolvimento Web - Crie 6 projetos</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>07/2020</i></p>
+								<p>ude.my/UC-8c12dff5-a403-4226-9b65-9d1205b355ce</p>
+								<p>Udemy</p>
+							</li>
+						</ul>
+						<br>
+						<ul class="w3-ul">
+							<li>
+
+								<p class="curso">Curso de Italiano para falantes de português - primeiro nível</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>01/2020</i></p>
+								<p>ude.my/UC-IO222S9B</p>
+								<p>Udemy</p>
+							</li>
+							
+						</ul>
+						<br>
+						<ul class="w3-ul">
+							<li>
+								<p class="curso">Espanhol para iniciantes - Nível 1</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>06/2019</i></p>
+								<p>ude.my/UC-KE6QBBDJ</p>
+								<p>Udemy</p>
+							</li>
+					
+						</ul>
+						<br>
+						<ul class="w3-ul">
+							<li>
+								<p class="curso">Análise e Desenvolvimento de Sistemas com Visual Basic</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>04/2019</i></p>
+								<p>ude.my/UC-LO6LFE7Z</p>
+								<p>Udemy</p>
+							</li>
+							
+						</ul>
+						<br>
+						<ul class="w3-ul">
+							<li>
+								<p class="curso">Introdução ao Visual Basic</p>
+								<p class="w3-text-amber"><i><i class="fas fa-calendar w3-margin-right"></i>04/2019</i></p>
+								<p>ude.my/UC-RHWHLP2X</p>
+								<p>Udemy</p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+
+
+			<!-- Linguas -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="languages">
+				<div class="w3-row-padding">
+					<div class="w3-third ">
+						<h3 class="w3-text-gray w3-center"><i class="fas fa-globe w3-text-amber w3-large w3-margin-right"></i>Idiomas</h3>
+					</div>
+
+					<div class="w3-rest w3-border-left w3-padding-large timeline md-40">
+						<ul class="w3-ul">
+							<li>
+								<p>Português</p>
+								<div class="progress w3-round-xlarge">
+						 			<div class="progress-value"></div>
+            					</div>
+							</li>
+						</ul>
+
+						<ul class="w3-ul">
+							<li>
+
+								<p >Inglês</p>
+								<div class="progress w3-round-xlarge">
+						 			<div class="progress-value1"></div>
+            					</div>
+							</li>
+						</ul>
+
+
+						<ul class="w3-ul">
+							<li>
+								<p>Francês</p>
+								<div class="progress w3-round-xlarge">
+						 			<div class="progress-value2"></div>
+            					</div>
+							</li>
+						</ul>
+
+						<ul class="w3-ul">
+							<li>
+								<p>Espanhol</p>
+								<div class="progress w3-round-xlarge">
+						 			<div class="progress-value3"></div>
+            					</div>
+							</li>
+						</ul>
+
+						<ul class="w3-ul">
+							<li>
+								<p>Italiano</p>
+								<div class="progress w3-round-xlarge">
+						 			<div class="progress-value3"></div>
+            					</div>
+							</li>
+						</ul>
+						
+						
+					</div>
+				</div>
+				
+				
+				
+			</div>
+
+			<!-- Interesses -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="interests">
+				<div class="w3-row-padding">
+					<div class="w3-third ">
+						<h3 class="w3-text-gray w3-center"><i class="fas fa-heart w3-text-amber w3-large w3-margin-right"></i>Interesses</h3>
+					</div>
+					<div class="w3-rest w3-border-left w3-padding-large">
+						<div class="w3-third">
+							<i class="fas fa-globe-europe w3-xxlarge"></i>
+							<h6>Viajar</h6>
+						</div>
+						<div class="w3-third">
+							<i class="fas fa-paw w3-xxlarge"></i>
+							<h6>Cães</h6>
+						</div>
+						<div class="w3-third">
+							<i class="fas fa-guitar w3-xxlarge"></i>
+							<h6>Guitarra clássica</h6>
+						</div>
+
+
+
+					</div>
+						
+				
+						
+				</div>
+			</div>
+
+
+		
+		
+
+			<!-- Footer -->
+			<footer class="w3-container w3-center w3-padding-32  w3-light-grey  w3-opacity w3-xlarge w3-margin-top" style="margin:-24px" id="social" >
+				<div class=" w3-section w3-center">
+					<a href="http://www.instagram.com/dianafo60/" class="w3-btn w3-transparent w3-hover-text-amber w3-circle"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/diana.oliveira32" class="w3-btn w3-transparent w3-hover-text-amber w3-circle"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.linkedin.com/in/diana-oliveira-65831272/" class="w3-btn w3-transparent w3-hover-text-amber w3-circle"><i class="fab fa-linkedin-in"></i></a>
+				
+				    <p class="w3-medium">Powered by Dianafo</p>
+				</div>
+				
+			  <!-- End footer -->
+		 	</footer>
+
+
+	 	<!-- END PAGE CONTENT -->
+		</div>
+
+
+
+
+		<script>
+		// Open and close sidebar
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "60%";
+		  document.getElementById("mySidebar").style.display = "block";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidebar").style.display = "none";
+		}
+		</script>
+
+
+
+
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
 </html>
